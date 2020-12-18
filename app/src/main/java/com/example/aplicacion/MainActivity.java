@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void solicitarPermisos(){
         int permisoStorage = ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE);
+        int permisoLocation = ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
         if(permisoStorage!=getPackageManager().PERMISSION_GRANTED)
             if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M)
-                requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},REQUEST_CODE_ASK_PERMISSION);
+                requestPermissions(new String[]{ Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.READ_EXTERNAL_STORAGE},REQUEST_CODE_ASK_PERMISSION);
 
     }
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#D5EAEC"
     tools:context=".ui.dashboard.MusicFragment">
 
     <TextView
@@ -24,21 +25,6 @@
         android:layout_height="44dp"
         android:background="@drawable/btnlistmusic"
         android:layout_margin="15dp"
-        />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="5dp"
-        android:background="@drawable/portada" />
-
-    <TextView
-        android:id="@+id/nameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="mayonesa - la loca banda"
-        android:layout_gravity="center"
         />
 
     <LinearLayout
@@ -70,12 +56,22 @@
             android:background="@drawable/btnnext" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mayonesa - la loca banda"
+        android:layout_gravity="center"
+        />
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listMusic"
         android:layout_width="match_parent"
-        android:background="#D9D5EAEC"
-        android:layout_height="36dp"
+        android:background="#00D5EAEC"
+        android:layout_height="300dp"
         android:layout_margin="10dp"
+        android:padding="12dp"
         android:scrollbars="vertical"
 
         />

@@ -25,6 +25,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
 import com.example.aplicacion.Estadistica;
+import com.example.aplicacion.Graficas;
 import com.example.aplicacion.LoginActivity;
 import com.example.aplicacion.PrimerFragment;
 import com.example.aplicacion.R;
@@ -40,7 +41,7 @@ public class TimesFragment extends Fragment implements IOnFocusListenable{
     private String mParam2;
 
     View view;
-    Button siguiente3;
+    Button siguiente3, graf;
     AnimationDrawable relojAnimation;
     public TimesFragment() {
         // Required empty public constructor
@@ -82,6 +83,16 @@ public class TimesFragment extends Fragment implements IOnFocusListenable{
             }
 
         });
+        graf=(Button)view.findViewById(R.id.sig);
+        graf.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Graficas.class);
+                getActivity().startActivity(intent);
+            }
+
+        });
+
         ImageView imageAnimation = (ImageView) view.findViewById(R.id.image);
         imageAnimation.setBackgroundResource(R.drawable.reloj_an);
         AnimationDrawable timeAnimation = (AnimationDrawable) imageAnimation.getBackground();

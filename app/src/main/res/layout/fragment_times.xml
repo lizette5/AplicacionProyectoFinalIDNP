@@ -47,6 +47,14 @@
                     android:text="MOSTRAR ESTADISTICAS"
                     android:textAlignment="center"
                     android:textColor="#F8F6F6" />
+                <Button
+                    android:id="@+id/sig"
+                    android:layout_width="318dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_custom"
+                    android:layout_gravity="center"
+                    android:text="Graficas"
+                    android:textColor="#F8F6F6" />
 
             </LinearLayout>
         </LinearLayout>

@@ -30,7 +30,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        progressBar = findViewById(R.id.progressBar2);
+       
         usuario = findViewById((R.id.edtusername));
         password = findViewById(R.id.edtpassword);
       //  sharedPreferences=getSharedPreferences("loginref",MODE_PRIVATE);
